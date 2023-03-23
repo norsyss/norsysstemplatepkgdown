@@ -1,8 +1,6 @@
 template:
-  theme: "github-light"
-  includes:
-    after_body:  '<div w3-include-html="./footer.html"></div>'
   bootstrap: 5
+  theme: "github-light"
   bslib:
     bg: "#fbfbfb"
     fg: "#181b40"
