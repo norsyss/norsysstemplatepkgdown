@@ -1,21 +1,17 @@
-Package: norsyss
-Title: Norwegian Syndromic Surveillance System
-Version: 2023.3.18
+Package: norsysstemplatepkgdown
+Title: NorSySS pgkdown template
+Version: 1.0.0
 Authors@R: c(
   person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-6747-1726")
   ))
-Description: Surveillance of infectious diseases based on consultations with general practitioners and out-of-hours primary care facilities.
-URL: https://github.com/norsyss/norsyss
-BugReports: https://github.com/norsyss/norsyss/issues
+Description: Pkgdown template used for NorSySS packages.
+URL: https://github.com/norsyss/norsysstemplatepkgdown
+BugReports: https://github.com/norsyss/norsysstemplatepkgdown/issues
 Depends:
   R (>= 4.1.0)
 Imports:
-  data.table,
-  glue,
-  lubridate,
-  magrittr,
-  rstudioapi
+  magrittr
 Suggests: 
     testthat,
     knitr,
