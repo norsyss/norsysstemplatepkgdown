@@ -17,7 +17,6 @@ fix_description_version:
 	sed -i "s/^Version: .*/Version: $(DATE)/" DESCRIPTION
 	sed -i '/Date\/Publication:/d' DESCRIPTION # delete if exists
 	echo "Date/Publication: $(DATETIMEUTC) UTC" >> DESCRIPTION #append to bottom
-	chmod -R 777 ..
 
 .ONESHELL:
 build_data:
@@ -95,12 +94,6 @@ drat:
 
 .ONESHELL:
 pkgdown:
-	docker run --rm --privileged \
-		-v "/mnt/containers/volumes/csids-hub/agent-pipelines/$(PKGNAME)/rpkg:/rpkg" \
-		-v "/mnt/containers/volumes/csids-hub/agent-pipelines/$(PKGNAME)/built:/built" \
-		-v "/mnt/containers/git/csids/drat:/drat" \
-		localhost/sc8-su-csverse:latest /bin/bash -c 'Rscript -e "devtools::install(\"/rpkg\", dependencies = TRUE, upgrade = FALSE); pkgdown::build_site(\"/rpkg\")"'
-
 	if [ -d "docs" ]
 	then
 		git add docs

@@ -1,30 +1,21 @@
-Package: sc9
-Title: Real-time analysis and disease surveillance system
-Version: 9.0.0
+Package: norsyss
+Title: Norwegian Syndromic Surveillance System
+Version: 2023.3.18
 Authors@R: c(
   person(c("Richard","Aubrey"), "White", email = "hello@rwhite.no", role = c("aut", "cre"),
     comment = c(ORCID = "0000-0002-6747-1726")
   ))
-Description: The generic infrastructure that can be used to implement new real-time analysis and disease surveillance systems.
-URL: https://www.csids.no/sc9/, https://github.com/csids/sc9
-BugReports: https://github.com/csids/sc9/issues
+Description: Surveillance of infectious diseases based on consultations with general practitioners and out-of-hours primary care facilities.
+URL: https://github.com/norsyss/norsyss
+BugReports: https://github.com/norsyss/norsyss/issues
 Depends:
   R (>= 4.1.0)
 Imports:
-  csdb,
   data.table,
-  dplyr,
-  fs,
   glue,
   lubridate,
   magrittr,
-  plnr (>= 2021.5.4),
-  processx,
-  progressr,
-  R6,
-  rstudioapi,
-  stats,
-  stringr
+  rstudioapi
 Suggests: 
     testthat,
     knitr,
@@ -36,3 +27,4 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 Encoding: UTF-8
+Date/Publication: 2023-03-18 05:21:20 UTC

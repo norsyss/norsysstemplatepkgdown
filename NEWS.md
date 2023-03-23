@@ -1,6 +1,6 @@
 # sc 2023.7.23
 
-- sc8 is deprecated in favor of sc9.
+- sc8 is deprecated in favor of norsyss.
 
 # sc 8.0.2
 
